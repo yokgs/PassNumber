@@ -17,13 +17,13 @@ $("#overlay").fadeIn(700);
 })
 
 $(".ad").click(function(){
-open("mailto:yazid.slila@outlook.fr")
+open("https://twitter.com/Y_OKGs/")
 })
 $(".ab").click(function(){
-open("https://www.facebook.com/razane.zalagh")
+open("https://github/yokgs/")
 })
 $(".ac").click(function(){
-open("tel:+18722018012")
+open("https://www.instagram.com/y.okg/")
 })
 $("#us").click(function(){
 $(".b").removeClass("t");
