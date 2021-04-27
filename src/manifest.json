@@ -1,0 +1,15 @@
+{
+  "short_name": "PN",
+  "name": "PassNumber",
+  "icons": [
+    {
+      "src": "assets/logo.png",
+      "sizes": "500x500",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#FFBB00",
+  "background_color": "#4A4A4A",
+  "start_url": "index.html",
+  "display": "standalone"
+}
