@@ -161,9 +161,7 @@ $(document).ready(function () {
         for (let i = 0; i < L; i++) {
             var nextChar = parseInt(res, res[0] == "0" ? 8 : 10) % PARAMETERS.charsets[mode].length;
             x += PARAMETERS.charsets[mode][nextChar];
-            console.log(parseInt(res).toString(2).split('').reverse().join('').replace(/^0+/, '0') || 0);
-            res = (parseInt(res) + 2).toString(2).split('').reverse().join('').replace(/^0+/, '0') || 0;
-            console.log(res);
+            res = parseInt(res).toString(2).split('').reverse().join('').replace(/^0+/, '0') || 0;
         }
 
         $(".a").remove();
@@ -172,7 +170,6 @@ $(document).ready(function () {
         }
         else {
             navigator.clipboard.writeText(x).then(function () {
-                alert("Text copied to clipboard");
             }).catch(function (error) { return false; });
             $("body").append("<div class='a'>" + x + "</div>");
         }
