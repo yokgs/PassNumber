@@ -1,9 +1,10 @@
 $(document).ready(function () {
+    let NUMBERS = "1234567890", CHARS = "qwertyuiopasdfghjklzxcvbnm";
     let PARAMETERS = {
         charsets: {
-            normal: "qwertyuiopasdfghjklzxcvbnm1234567890",
-            easy: "1234567890",
-            hard: "qwertyuiopasdfghjklzxcvbnm1234567890AZERTYUIOPQSDFGHJKLMWXCVBN",
+            normal: CHARS+NUMBERS,
+            easy: NUMBERS,
+            hard: CHARS+NUMBERS+"AZERTYUIOPQSDFGHJKLMWXCVBN",
         },
         size: {
             normal: 8,
